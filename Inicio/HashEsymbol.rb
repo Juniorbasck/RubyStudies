@@ -37,3 +37,14 @@
  #Os symbols são normalmente usados quando precisamos de identificadores. Em Ruby, quando é feita uma comparação 
  #entre strings, ele precisa verificar cada caractere para saber se há igualdade. Já no caso de symbols, basta fazer
  # uma comparação entre números inteiros (object_id), o que é muito mais rápido e eficiente.
+
+#-------------------------------------------------
+
+#Aí entra uma estrutura muito importante em Ruby, o hash, que é um conjunto de pares com uma chave e um valor.
+# Com ele, podemos nomear nossos atributos, como um dicionário.
+
+aluno = { nome: 'João', nota: 7, disciplina: 'Ciências' }
+puts aluno[:nome]
+puts aluno[:disciplina]
+aluno[:nome] = 'Maria'
+puts aluno[:nome]
