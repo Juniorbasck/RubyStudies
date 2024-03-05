@@ -1,9 +1,15 @@
 class Professor
-    attr_accessor :nome, :id
-    
-    def initialize(nome, id)
+    attr_reader :ferias
+    attr_accessor :nome, :codigo_funcionario, :disciplina
+
+    def initialize(nome, codigo_funcionario, disciplina)
         @nome = nome
-        @id = id
+        @codigo_funcionario = codigo_funcionario
+        @disciplina = disciplina
+        @ferias = false
     end
 
+    def inicia_ferias()
+        @ferias = true
+    end
 end
