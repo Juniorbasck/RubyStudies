@@ -1,11 +1,18 @@
-require_relative 'Professor'
-
 class Turma
-    attr_accessor :nome, :sala, :professorResp
 
-    def initialize(nome, sala, professorResp)
+    attr_reader :alunos
+    attr_accessor :nome
+    
+    def initialize(nome)
         @nome = nome
-        @sala = sala
-        @professorResp = professorResp
+        @alunos = [ ]
     end
-end 
+    
+    def adicionar_aluno(aluno)
+        alunos << aluno
+        end
+    
+    private
+    
+    attr_writer :alunos
+end

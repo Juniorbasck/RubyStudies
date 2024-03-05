@@ -1,4 +1,4 @@
-class Professor
+class Professor < Funcionario
     attr_reader :ferias
     attr_accessor :nome, :codigo_funcionario, :disciplina
 
