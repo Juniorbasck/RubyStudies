@@ -19,6 +19,7 @@ puts('Digite um número: ')
 numero = gets.chomp()
 # => "1"
 # "1" não é um número e sim um texto com um número
+#
 
 10 % 2 # resto da divisão
 10.positive?() # informa se o valor é positivo
