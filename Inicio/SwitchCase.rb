@@ -2,7 +2,7 @@ nota = 7
 case nota
 
 when 0
-    puts 'Você tirou zero! Precisa melhorar…'
+    puts 'Você tirou zero! Precisa melhorar'
 when 1..4
     puts 'Reprovado… precisa se esforçar mais...'
 when 5
